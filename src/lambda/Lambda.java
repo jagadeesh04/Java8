@@ -23,6 +23,21 @@ public class Lambda {
 		
 		//values.forEach(i -> System.out.println(i)); //lambda //consumer
 		
+		//this is familiar not simple.
+		//set variable, set boundary,
+		//self inflected boon factor pattern
+		/*for(int i=0; i<values.size(); i++){
+			System.out.println(values.get(i));
+		}*/
+		
+		
+		//no self inflected
+		//it is self iterator
+		//external iterator
+		for(int e: values){
+			System.out.println(e);
+		}
+		
 		Consumer<Integer> c = i ->System.out.println(i);
 		
 		values.forEach(c);
